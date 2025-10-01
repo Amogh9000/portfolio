@@ -34,5 +34,5 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
     };
   }, []);
 
-  return children as JSX.Element;
+  return <>{children}</>;
 }
