@@ -18,7 +18,6 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
     const lenis = new Lenis({
       duration: 1.1,
       smoothWheel: true,
-      smoothTouch: false,
       gestureOrientation: "vertical",
     });
 
@@ -37,5 +36,3 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
 
   return children as JSX.Element;
 }
-
-
