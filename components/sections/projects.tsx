@@ -4,7 +4,7 @@ import { Tilt } from "@/components/ui/tilt";
 type Project = {
   title: string;
   description: string;
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<{ className?: string }>;
   tech: string[];
   link?: string;
 };

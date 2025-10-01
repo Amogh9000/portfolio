@@ -21,7 +21,7 @@ export function FluidBackground() {
     return () => window.removeEventListener("mousemove", onMove);
   }, [prefersReducedMotion]);
 
-  const center = useMemo(() => ({ x: typeof window !== "undefined" ? window.innerWidth / 2 : 0, y: typeof window !== "undefined" ? window.innerHeight / 2 : 0 }), []);
+  // center kept previously for readability; removed unused variable per lint
   const parallax = (depth: number) => {
     if (typeof window === "undefined") return "translate3d(0,0,0)";
     const cx = window.innerWidth / 2;

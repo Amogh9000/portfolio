@@ -1,6 +1,6 @@
 "use client";
 
-import { useMotionValue, useSpring, motion } from "framer-motion";
+import { useSpring, motion } from "framer-motion";
 import { useRef } from "react";
 
 type TiltProps = {
