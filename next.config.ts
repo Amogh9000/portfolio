@@ -13,6 +13,10 @@ const csp = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  // Ensure Next.js binds to the correct port for Render
+  experimental: {
+    serverComponentsExternalPackages: [],
+  },
   async headers() {
     return [
       {
