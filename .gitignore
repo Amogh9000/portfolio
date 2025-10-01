@@ -22,6 +22,14 @@
 
 # misc
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.local
+*.log
+*.log.*
+!.vscode/extensions.json
+!.vscode/settings.json
 *.pem
 
 # debug
@@ -29,6 +37,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.eslintcache
+.stylelintcache
+.turbo
+.swc/
+
+# Next.js cache
+.next/cache/
 
 # env files (can opt-in for committing if needed)
 .env*
