@@ -19,7 +19,6 @@ interface Blob {
 
 export function AnimatedBlobs({ className = "" }: AnimatedBlobsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   
   // Motion values for smooth mouse tracking
@@ -86,7 +85,6 @@ export function AnimatedBlobs({ className = "" }: AnimatedBlobsProps) {
         const x = (e.clientX - rect.left) / rect.width;
         const y = (e.clientY - rect.top) / rect.height;
         
-        setMousePosition({ x: x * 100, y: y * 100 });
         mouseX.set(x * 100);
         mouseY.set(y * 100);
       }

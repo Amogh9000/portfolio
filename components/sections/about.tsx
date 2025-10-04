@@ -8,13 +8,13 @@ export function About() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">About</h2>
           <div className="space-y-4 text-muted leading-relaxed">
             <p>
-              I'm passionate about bridging the gap between complex data and real-world solutions. My journey started with curiosity about how machines can learn patterns from data, and it's evolved into building ML applications that solve actual problems.
+              I&apos;m passionate about bridging the gap between complex data and real-world solutions. My journey started with curiosity about how machines can learn patterns from data, and it&apos;s evolved into building ML applications that solve actual problems.
             </p>
             <p>
-              What drives me is the moment when a model finally clicks—when months of data preprocessing, feature engineering, and hyperparameter tuning result in something that genuinely helps people make better decisions. Whether it's predicting salaries to help job seekers negotiate better, or building fraud detection systems to protect financial transactions.
+              What drives me is the moment when a model finally clicks—when months of data preprocessing, feature engineering, and hyperparameter tuning result in something that genuinely helps people make better decisions. Whether it&apos;s predicting salaries to help job seekers negotiate better, or building fraud detection systems to protect financial transactions.
             </p>
             <p>
-              Beyond the technical work, I believe in making AI accessible. That's why I focus on clean, intuitive interfaces and clear explanations of how these "black box" models actually work.
+              Beyond the technical work, I believe in making AI accessible. That&apos;s why I focus on clean, intuitive interfaces and clear explanations of how these &quot;black box&quot; models actually work.
             </p>
             <p>
               Actively participate in hackathons and datathons to push creative problem-solving and apply AI/DS in real-world contexts.

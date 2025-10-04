@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatedBlobs } from "./animated-blobs";
 
 type Particle = { id: number; x: number; y: number; size: number; speed: number };

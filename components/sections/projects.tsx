@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, Shield, Rocket, NotebookText, Github, Eye } from "lucide-react";
+import { Shield, Rocket, NotebookText, Github, Eye } from "lucide-react";
 import { Tilt } from "@/components/ui/tilt";
 
 type Project = {
