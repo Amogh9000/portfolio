@@ -8,7 +8,8 @@
   --glass-border: rgba(255, 255, 255, 0.14);
 }
 
-@theme inline {
+/* Custom properties for Tailwind integration */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
@@ -130,6 +131,59 @@ body {
   }
 }
 
+/* Light stream effects */
+.light-stream-glow {
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)) 
+          drop-shadow(0 0 20px rgba(255,255,255,0.3)) 
+          drop-shadow(0 0 40px rgba(255,255,255,0.1));
+}
+
+.light-trail {
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255,255,255,0.8) 50%, 
+    transparent 100%);
+  animation: lightPulse 2s ease-in-out infinite;
+}
+
+@keyframes lightPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes lightTrail {
+  0% { opacity: 1; transform: translateX(0) scale(1); }
+  100% { opacity: 0; transform: translateX(-100px) scale(0.5); }
+}
+
+/* Animated blob effects */
+.blob-glow {
+  filter: blur(40px) saturate(150%);
+  mix-blend-mode: screen;
+}
+
+.blob-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blob-hover:hover {
+  filter: blur(30px) saturate(200%) brightness(1.2);
+  transform: scale(1.1);
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -15px) rotate(90deg); }
+  50% { transform: translate(-5px, 10px) rotate(180deg); }
+  75% { transform: translate(-15px, -5px) rotate(270deg); }
+}
+
+.blob-animate {
+  animation: blobFloat 20s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .light-stream-glow { filter: none; }
+  .light-trail { animation: none; }
 }

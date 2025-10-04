@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Github, Linkedin, Mail, Cpu } from "lucide-react";
+import { Github, Linkedin, Mail, Cpu, Eye } from "lucide-react";
 
 const stagger: Variants = {
   hidden: { opacity: 0, y: 12 },
@@ -40,22 +40,23 @@ export function Hero() {
           />
         </div>
       </div>
-      <div className="max-w-3xl mx-auto px-6 liquid-hover">
+      <div className="max-w-3xl mx-auto px-6">
         <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6 }} className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6">
           <Cpu className="h-4 w-4 animate-pulse" />
           <span className="text-xs uppercase tracking-widest text-muted">AI / DS Student</span>
         </motion.div>
-        <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="glow-text text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.05]">
-          <span className="liquid-text" data-text="Amogh Manjunath">Amogh Manjunath</span>
+        <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.05] text-gradient">
+          Amogh Manjunath
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="mt-4 text-base sm:text-lg text-muted">
-          Designing intelligent systems and fluid digital experiences.
+          Turning data into decisions with AI and building ML-powered applications for real-world impact.
         </motion.p>
-        <div className="mt-8 flex items-center justify-center gap-3">
+        <div className="mt-8 flex items-center justify-center gap-3 flex-wrap">
           {[
             { href: "https://github.com/Amogh9000", Icon: Github, label: "GitHub" },
             { href: "https://www.linkedin.com/in/amogh-m-866323355/", Icon: Linkedin, label: "LinkedIn" },
             { href: "mailto:amoghmanjunath2019@gmail.com", Icon: Mail, label: "Email" },
+            { href: "/resume.pdf", Icon: Eye, label: "View Resume" },
           ].map(({ href, Icon, label }, i) => (
             <motion.a
               key={label}

@@ -48,9 +48,18 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
+# deployment
 .vercel
+.render
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Keep important files for deployment
+!public/resume.pdf
+!public/favicon.ico
+
+# Ignore old/duplicate files
+public/cv.pdf
+public/resume_amogh_manjunath*.pdf

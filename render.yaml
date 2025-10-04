@@ -1,14 +1,14 @@
 services:
   - type: web
-    name: portfolio
+    name: amogh-portfolio
     env: node
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: node server.js
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:render
     envVars:
       - key: NODE_VERSION
         value: 20
+      - key: NODE_ENV
+        value: production
       - key: PORT
         value: 10000
-      - key: HOSTNAME
-        value: 0.0.0.0

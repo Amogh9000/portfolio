@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { AnimatedBlobs } from "./animated-blobs";
 
 type Particle = { id: number; x: number; y: number; size: number; speed: number };
 
@@ -80,6 +81,9 @@ export function FluidBackground() {
       <div className="absolute left-1/3 top-1/3 w-[20rem] h-[20rem] opacity-[0.08]">
         <div className="w-full h-full rounded-[60%_40%_65%_35%_/_60%_35%_65%_40%] bg-white blur-2xl animate-[blob_12s_ease-in-out_infinite]" />
       </div>
+
+      {/* Animated blobs inspired by shader effects */}
+      <AnimatedBlobs className="absolute inset-0" />
 
       {/* Film grain overlay */}
       <div className="noise-overlay" />

@@ -16,7 +16,7 @@ export function Certifications() {
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">Certifications</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certs.map((c) => (
-            <div key={c.title} className="rounded-xl border border-white/10 p-5 transition-colors hover:border-white/20">
+            <div key={c.title} className="rounded-xl border border-white/10 p-5 transition-colors hover:border-white/25">
               <div className="font-medium">{c.title}</div>
               <div className="text-sm text-muted">{c.issuer}</div>
               <div className="text-xs text-muted mt-1">{c.date}</div>

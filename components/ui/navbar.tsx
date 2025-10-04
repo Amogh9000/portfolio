@@ -19,8 +19,8 @@ export function Navbar() {
         className="pointer-events-auto glass rounded-full border border-white/10 px-3 py-2 shadow-glow backdrop-saturate-150"
       >
         <div className="flex items-center gap-2">
-          <Link href="#" className="px-3 py-1 text-sm font-medium text-white/90 rounded-full hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30">
-            ◦ Amogh
+          <Link href="#about" className="px-3 py-1 text-sm font-medium text-white/90 rounded-full hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30">
+            ◦ About
           </Link>
           <div className="h-5 w-px bg-white/10 mx-1" />
           {navItems.map((item) => (
